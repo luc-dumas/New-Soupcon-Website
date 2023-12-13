@@ -1,4 +1,60 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+
+
+
+
+/* HTML RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------- */
+
+
+
+
+
+
 
 html {
   height: 100%;
@@ -29,34 +85,65 @@ a {
   color: #333;
 }
 
-.header-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
-	background-color: #f4f4f4;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #fafafa91;
+  box-shadow: 0px 3px 5px -2px rgba(224,224,224,1);
 }
 
-.logo-box {
-	display: flex;
-	align-items: center;
+.navigation, .account-area {
+  flex: 1; 
 }
 
-.logo {
-	margin-right: 10px;
-}
-.logo-text {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: black;
+.navigation {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.nav {
-	display: flex;
-	margin-right: 10px;
+.account-area {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.account-area button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.logo-area {
+  display: flex;
+  flex-grow: 0; 
+}
+
+
+.logo-area img {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.logo-area h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
 }
 
 .nav__link {
-	margin-left: 10px;
-	text-decoration: none;
+  margin-right: 10px;
+  text-decoration: none;
+  text-wrap: none;
 }
